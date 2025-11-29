@@ -56,17 +56,48 @@ To start, the user needs to use the command like command prompt or terminal and 
 
 ## SAMPLE OUTPUT
 
-![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/581969051_1265517308925083_914414488596820509_n.png)
-<br/>
-![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/582110359_2599652210398892_3482966512181459658_n.png)
-<br/>
-![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/582111556_1538945017419883_4834425962798704109_n.png)
-<br/>
-![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/582200834_1896306211097146_1638670185329471040_n.png)
-<br/>
-![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/583872097_2051664858910692_3950559076868853180_n.png)
-<br/>
-![SAMPLE OUTPUT](https://github.com/cedricknoyda/image-/blob/main/44743494-ee73-43a4-b0c9-680e2e896aa0.jpg)
+```
++-----------------------------------------------------------------------------------------------+
+|                                                                                               |
+|                         College of Informatics and Computing Sciences                         |
+|                                                                                               |
++-----------------------------------------------------------------------------------------------+
+|                            Welcome to the University of Spartans!                             |
+|                                          Enroll Now!                                          |
++-----------------------------------------------------------------------------------------------+
+|      In enrolling in the university, you should provide the required information below:       |
++-----------------------------------------------------------------------------------------------+
+
+  Name: Krishylla Mae B. Ilagan
+  Age: 19
+  Address: Ibaan, Batangas
+```
+
+```
++-----------------------------------------------------------------------------------------------+
+|                                                                                               |
+|                      You are now Enrolled in the University of Spartan!                       |
+|                                                                                               |
++-----------------------------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------------------------+
+|                                  Student Enrollment Summary                                   |
++-----------------------------------------------------------------------------------------------+
+|    Student ID: 2025-5725                                                                      |
+|    Name: Krishylla Mae B. Ilagan                                                              |
+|    Age: 19                                                                                    |
+|    Address: Ibaan, Batangas                                                                   |
+|    Period: First Semester 2025-2026                                                           |
+|    Program: BSIT                                                                              |
+|    Year Level: 1st Year 1st Semester                                                          |
+|    Block: Blk. 103                                                                            |
++-----------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------+
+|                    For more inquiries kindly email: spartan.cics@gmail.com                    |
++-----------------------------------------------------------------------------------------------+
+```
+
+
 
 ## AUTHOR AND ACKNOWLEDGEMENT
 Our project **“SES: Student Enrollment System”** was done by our team **“Sesters”**. Our members’ name is listed here:
