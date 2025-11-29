@@ -15,7 +15,7 @@ The Student Enrollment System is a console-based program that simplifies the stu
 - **CLASSES and OBJECTS**
     - Classes
         - The ```Student``` acts as a guide for making personal student records.It defines the attributes such as ```name```,```age```, ```address```, ```enrollmentPeriod```, ```program```, ```yearLevel```, ```block```, and ```srCode```, and the methods (behavior) like ```displayDetails()```.
-        - The ```EnrollmentSystem``` class serves as the main application container. It holds the core logic, utility methods (```printCenteredLine```,``` displayCourses```, etc.), and the main execution point (```main```).
+        - The ```EnrollmentSystem``` class serves as the main application container. It holds the core logic, utility methods (```printCenteredLine```, and ``` displayCourses```, etc.), and the main execution point (```main```).
     - Objects
         - In the ```main``` method, a new student object```newCicsStudent```, is created using the ``Student`` class's constructor: ```Student newCicsStudent = new Student(...)```.
         - This object holds all the specific data gathered during the enrollment process for that student.
@@ -23,7 +23,7 @@ The Student Enrollment System is a console-based program that simplifies the stu
 <br>
 
 - **ENCAPSULATION** - Encapsulation involves grouping data and the methods that work on that data within a class. It also controls how external entities can access that data.
-   - Attributes like a student's ```name```, ```age```,```srCode```, etc. are contained within the ```Student``` class
+   - Attributes like a student's ```name```, ```age```, and ```srCode```, etc. are contained within the ```Student``` class
    - The program provides specific methods to interact with this data:
         - Getters (like ```getProgram()``` in the ```Student``` class) allow code to read a value.
         - Setters (like ```setBlock()``` in the ```Student``` class) allow code to write or modify a value in a controlled way.
@@ -32,7 +32,7 @@ The Student Enrollment System is a console-based program that simplifies the stu
    - Superclass:
         - A base class, like ```Student```, is created. It contains attributes that are common to all university members, such as ```name```, ```age```, ```address```, etc.
     - Subclasses:
-        -  Include classes such as ```bsitStudent```, ```bscsStudent```, and ```mscsStudent```, which extend the ```Student``` superclass. They inherit common attributes and add their unique properties. For instance, the ```bsitStudent`` class adds ```srCode```, ```program```, ```block```, etc. This creates a clear relationship a **bsitStudent is an Student**.
+        -  Include classes such as ```bsitStudent```, ```bscsStudent```, and ```mscsStudent```, which extend the ```Student``` superclass. They inherit common attributes and add their unique properties. For instance, the ```bsitStudent`` class adds ```srCode```, ```program```, and ```block```, etc. This creates a clear relationship a **bsitStudent is an Student**.
           
 - **POLYMORPHISM** - Polymorphism, which means "many forms," allows a common method to work differently depending on the specific type of the object.
     - Overridden Method: A method, such as ```displayCourses()```, is defined in the superclass (```Student```).
