@@ -23,16 +23,16 @@ The Student Enrollment System is a console-based program that simplifies the stu
 <br>
 
 - **ENCAPSULATION** - Encapsulation involves grouping data and the methods that work on that data within a class. It also controls how external entities can access that data.
-   - Attributes like a student's ```name```, ```age```, and ```srCode``` are contained within the ```Student``` class
+   - Attributes like a student's ```name```, ```age```,```srCode```, etc. are contained within the ```Student``` class
    - The program provides specific methods to interact with this data:
         - Getters (like ```getProgram()``` in the ```Student``` class) allow code to read a value.
         - Setters (like ```setBlock()``` in the ```Student``` class) allow code to write or modify a value in a controlled way.
 
 - **INHERITANCE** - Inheritance involves creating a superclass. Specialized subclasses then take on its shared attributes and behaviors.
    - Superclass:
-        - A base class, like ```Student``` (or a similar name), is created. It contains attributes that are common to all university members, such as ```name```, ```age```, and ```address```.
+        - A base class, like ```Student```, is created. It contains attributes that are common to all university members, such as ```name```, ```age```, ```address```, etc.
     - Subclasses:
-        -  Include classes such as ```bsitStudent```, ```bscsStudent```, and ```mscsStudent``` (or the other two subclasses you added), which extend the ```Student``` superclass. They inherit common attributes and add their unique properties. For instance, the ```bsitStudent`` class adds ```srCode```, ```program```, and ```block```. This creates a clear relationship a **bsitStudent is an Student**.
+        -  Include classes such as ```bsitStudent```, ```bscsStudent```, and ```mscsStudent```, which extend the ```Student``` superclass. They inherit common attributes and add their unique properties. For instance, the ```bsitStudent`` class adds ```srCode```, ```program```, ```block```, etc. This creates a clear relationship a **bsitStudent is an Student**.
           
 - **POLYMORPHISM** - Polymorphism, which means "many forms," allows a common method to work differently depending on the specific type of the object.
     - Overridden Method: A method, such as ```displayCourses()```, is defined in the superclass (```Student```).
@@ -48,7 +48,7 @@ The Student Enrollment System is a console-based program that simplifies the stu
 
 ## PROGRAM STRUCTURE
 
-The project is built using two main parts, which are the main classes in the Java program. First, is the **EnrollmentSystem** class. This class is the main part of the program because it has the main method, which is where the program starts running. It handles everything the user sees, like asking for information like the name, age, and program, and displaying the course lists and the final summary. This class also makes sure the user enters the right data by including special checks (exception handling) and serves as the main controller, handling user input, managing the program's flow, and displaying the final enrollment details for a new student, showing how it manages multiple objects.
+The project is built using two main parts, which are the main classes in the Java program. First, is the **EnrollmentSystem** class. This class is the main part of the program because it has the main method, which is where the program starts running. It handles everything the user sees, like asking for information like the name, age, program, etc. and displaying the course lists and the final summary. This class also makes sure the user enters the right data by including special checks (exception handling) and serves as the main controller, handling user input, managing the program's flow, and displaying the final enrollment details for a new student, showing how it manages multiple objects.
 Second, there is the **Student** class. This class is like a blueprint for creating an actual student. Every time a new student enrolls, the EnrollmentSystem creates a new Student object to hold their information, like their generated ID, age, and chosen block. The Student class keeps the student's data safe inside it by using methods to set and get the details, which is an example of encapsulation. The main class calls a method in the Student class to print out the final enrollment summary.
 
 ## HOW TO RUN THE PROGRAM
