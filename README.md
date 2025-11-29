@@ -1,4 +1,38 @@
-  Include classes such as ```bsitStudent```, ```bscsStudent```, and ```Administrator``` (or the other two subclasses you added), which extend the ```Student``` superclass. They inherit common attributes and add their unique properties. For instance, the ```bsitStudent`` class adds ```srCode```, ```program```, and ```block```. This creates a clear relationship a **bsitStudent is an Student**.
+# SES : Student Enrollment System
+![Student Enrollment System Background](https://raw.githubusercontent.com/cedricknoyda/image-/main/Screenshot%202025-11-13%20210808.png)
+<br/>
+<br/>
+
+## Description/Overview
+<br/>
+The Student Enrollment System is a console-based program that simplifies the student enrollment process for the "Batangas State University , College of Informatics and Computing Sciences." It collects essential student information such as name, age, and address. It also helps students choose their academic program (BSIT or BSCS) and year level, and assigns them to a proper class block with a set schedule. The key features include validating student data like name and age, showing course lists and block schedules specific to each program (including face-to-face and online classes), and generating a unique Student ID after successful registration. This system addresses the issues of manual and error-prone enrollment by offering a structured, interactive, and automated way to register students, giving them their complete class schedule and enrollment summary right away.
+<br/>
+<br/>
+
+
+
+## OOP Concepts Applied
+- **CLASSES and OBJECTS**
+    - Classes
+        - The ```Student```acts as a guide for making personal student records.It defines the attributes such as ```name```,```age```,```program```,and ```srCode```, and the methods (behavior) like ```displayDetails()```.
+        - The ```EnrollmentSystem``` class serves as the main application container. It holds the core logic, utility methods (```printCenteredLine```,``` displayCourses```), and the main execution point (```main```).
+    - Objects
+        - In the ```main``` method, a new student object```newCicsStudent```, is created using the ``Student`` class's constructor: ```Student newCicsStudent = new Student(...)```.
+        - This object holds all the specific data gathered during the enrollment process for that student.
+**Student objects**.
+<br>
+
+- **ENCAPSULATION** - Encapsulation involves grouping data and the methods that work on that data within a class. It also controls how external entities can access that data.
+   - Attributes like a student's ```name```, ```age```, and ```srCode``` are contained within the ```Student``` class
+   - The program provides specific methods to interact with this data:
+        - Getters (like ```getProgram()``` in the ```Student``` class) allow code to read a value.
+        - Setters (like ```setBlock()``` in the ```Student``` class) allow code to write or modify a value in a controlled way.
+
+- **INHERITANCE** - Inheritance involves creating a superclass. Specialized subclasses then take on its shared attributes and behaviors.
+   - Superclass:
+        - A base class, like ```Student``` (or a similar name), is created. It contains attributes that are common to all university members, such as ```name```, ```age```, and ```address```.
+    - Subclasses:
+        -  Include classes such as ```bsitStudent```, ```bscsStudent```, and ```Administrator``` (or the other two subclasses you added), which extend the ```Student``` superclass. They inherit common attributes and add their unique properties. For instance, the ```bsitStudent`` class adds ```srCode```, ```program```, and ```block```. This creates a clear relationship a **bsitStudent is an Student**.
           
 - **POLYMORPHISM** - Polymorphism, which means "many forms," allows a common method to work differently depending on the specific type of the object.
     - Overridden Method: A method, such as ```displayCourses()```, is defined in the superclass (```Student```).
@@ -57,4 +91,3 @@ Our team would like to thank our instructor, **_Mr. Emmanuel Charlie Enriquez_**
 
    - Programiz. (n.d.). Java Inheritance (With Examples). Retrieved November 21, 2025, from:
       -  https://www.programiz.com/java-programming/inheritance
-
