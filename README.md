@@ -56,6 +56,8 @@ To start, the user needs to use the command like command prompt or terminal and 
 
 ## SAMPLE OUTPUT
 
+### Student Information Details
+
 ```
 +-----------------------------------------------------------------------------------------------+
 |                                                                                               |
@@ -71,7 +73,24 @@ To start, the user needs to use the command like command prompt or terminal and 
   Name: Krishylla Mae B. Ilagan
   Age: 19
   Address: Ibaan, Batangas
+
++-----------------------------------------------------------------------------------------------+
+|  Date of enrollment:                                                                          |
+|    A. August 20, 2025 to September 20, 2025 (First Semester)                                  |
+|    B. January 20, 2026 to February 20, 2026 (Second Semester)                                 |
++-----------------------------------------------------------------------------------------------+
+  Choose (A/B): A
+
++-----------------------------------------------------------------------------------------------+
+|  Program:                                                                                     |
+|    BSIT - Bachelor of Science in Information Technology                                       |
+|    BSCS - Bachelor of Science in Computer Science                                             |
+|    MSCS - Master of Science in Computer Science                                               |
++-----------------------------------------------------------------------------------------------+
+Enter Program (ex. BSIT): BSIT
 ```
+
+### Enrolled Student
 
 ```
 +-----------------------------------------------------------------------------------------------+
