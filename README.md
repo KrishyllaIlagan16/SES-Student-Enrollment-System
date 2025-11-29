@@ -14,8 +14,8 @@ The Student Enrollment System is a console-based program that simplifies the stu
 ## OOP Concepts Applied
 - **CLASSES and OBJECTS**
     - Classes
-        - The ```Student```acts as a guide for making personal student records.It defines the attributes such as ```name```,```age```,```program```,and ```srCode```, and the methods (behavior) like ```displayDetails()```.
-        - The ```EnrollmentSystem``` class serves as the main application container. It holds the core logic, utility methods (```printCenteredLine```,``` displayCourses```), and the main execution point (```main```).
+        - The ```Student``` acts as a guide for making personal student records.It defines the attributes such as ```name```,```age```, ```address```, ```enrollmentPeriod```, ```program```, ```yearLevel```, ```block```, and ```srCode```, and the methods (behavior) like ```displayDetails()```.
+        - The ```EnrollmentSystem``` class serves as the main application container. It holds the core logic, utility methods (```printCenteredLine```,``` displayCourses```, etc.), and the main execution point (```main```).
     - Objects
         - In the ```main``` method, a new student object```newCicsStudent```, is created using the ``Student`` class's constructor: ```Student newCicsStudent = new Student(...)```.
         - This object holds all the specific data gathered during the enrollment process for that student.
@@ -32,17 +32,18 @@ The Student Enrollment System is a console-based program that simplifies the stu
    - Superclass:
         - A base class, like ```Student``` (or a similar name), is created. It contains attributes that are common to all university members, such as ```name```, ```age```, and ```address```.
     - Subclasses:
-        -  Include classes such as ```bsitStudent```, ```bscsStudent```, and ```Administrator``` (or the other two subclasses you added), which extend the ```Student``` superclass. They inherit common attributes and add their unique properties. For instance, the ```bsitStudent`` class adds ```srCode```, ```program```, and ```block```. This creates a clear relationship a **bsitStudent is an Student**.
+        -  Include classes such as ```bsitStudent```, ```bscsStudent```, and ```mscsStudent``` (or the other two subclasses you added), which extend the ```Student``` superclass. They inherit common attributes and add their unique properties. For instance, the ```bsitStudent`` class adds ```srCode```, ```program```, and ```block```. This creates a clear relationship a **bsitStudent is an Student**.
           
 - **POLYMORPHISM** - Polymorphism, which means "many forms," allows a common method to work differently depending on the specific type of the object.
     - Overridden Method: A method, such as ```displayCourses()```, is defined in the superclass (```Student```).
-    - Dynamic Behavior: This method is overridden in each subclass (```bsitStudent```, ```bscsStudent```, etc.) to provide role-specific output.
+    - Dynamic Behavior: This method is overridden in each subclass (```bsitStudent```, ```bscsStudent```, ```mscsStudent```) to provide role-specific output.
         - The ```bsitStudent``` version might print: "Enrolled in BSIT - 1st Year 1st Sem."
-        - The ```bscsStudent``` version might print: "Teaching in the Computer Science Department."
+        - The ```bscsStudent``` version might print: "Enrolled in BSCS - 2nd Year 1st Sem."
+        - The ```mscsStudent``` version might print: "Enrolled in MSCS - 1st Year 1st Sem."
     - When a collection of ```Student``` references is processed, calling the common method runs the right, specialized version for each object at runtime. This shows dynamic polymorphism.
   
 - **ABSTRACTION** - Abstraction shows only the essential information while hiding the complicated implementation details.
-   - Methods like ```displayCourses()``` hide the vast ```if/else``` logic that determines which specific courses to list based on the program (BSIT/BSCS) and year level.The calling code just needs to know the method name and the required parameters, which are ```program``` and ```yearLevel```.
+   - Methods like ```displayCourses()``` hide the vast ```if/else``` logic that determines which specific courses to list based on the program (BSIT/BSCS/MSCS) and year level.The calling code just needs to know the method name and the required parameters, which are ```program``` and ```yearLevel```.
    - The ```Student.displayDetails()``` This method offers a straightforward interface to print the student's complete enrollment summary. It removes the need for multiple calls to format and print each line.
 
 ## PROGRAM STRUCTURE
