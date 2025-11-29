@@ -32,7 +32,7 @@ The Student Enrollment System is a console-based program that simplifies the stu
    - Superclass:
         - A base class, like ```Student```, is created. It contains attributes that are common to all university members, such as ```name```, ```age```, ```address```, etc.
     - Subclasses:
-        -  Include classes such as ```bsitStudent```, ```bscsStudent```, and ```mscsStudent```, which extend the ```Student``` superclass. They inherit common attributes and add their unique properties. For instance, the ```bsitStudent`` class adds ```srCode```, ```program```, and ```block```, etc. This creates a clear relationship a **bsitStudent is an Student**.
+        -  Include classes such as ```bsitStudent```, ```bscsStudent```, and ```mscsStudent```, which extend the ```Student``` superclass. They inherit common attributes and add their unique properties. For instance, the ```bsitStudent``` class adds ```srCode```, ```program```, and ```block```, etc. This creates a clear relationship a **bsitStudent is an Student**.
           
 - **POLYMORPHISM** - Polymorphism, which means "many forms," allows a common method to work differently depending on the specific type of the object.
     - Overridden Method: A method, such as ```displayCourses()```, is defined in the superclass (```Student```).
