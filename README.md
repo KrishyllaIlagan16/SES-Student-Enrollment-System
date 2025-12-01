@@ -58,65 +58,11 @@ To start, the user needs to use the command like command prompt or terminal and 
 
 ### Student Information Details
 
-```
-+-----------------------------------------------------------------------------------------------+
-|                                                                                               |
-|                         College of Informatics and Computing Sciences                         |
-|                                                                                               |
-+-----------------------------------------------------------------------------------------------+
-|                            Welcome to the University of Spartans!                             |
-|                                          Enroll Now!                                          |
-+-----------------------------------------------------------------------------------------------+
-|      In enrolling in the university, you should provide the required information below:       |
-+-----------------------------------------------------------------------------------------------+
-
-  Name: Krishylla Mae B. Ilagan
-  Age: 19
-  Address: Ibaan, Batangas
-
-+-----------------------------------------------------------------------------------------------+
-|  Date of enrollment:                                                                          |
-|    A. August 20, 2025 to September 20, 2025 (First Semester)                                  |
-|    B. January 20, 2026 to February 20, 2026 (Second Semester)                                 |
-+-----------------------------------------------------------------------------------------------+
-  Choose (A/B): A
-
-+-----------------------------------------------------------------------------------------------+
-|  Program:                                                                                     |
-|    BSIT - Bachelor of Science in Information Technology                                       |
-|    BSCS - Bachelor of Science in Computer Science                                             |
-|    MSCS - Master of Science in Computer Science                                               |
-+-----------------------------------------------------------------------------------------------+
-Enter Program (ex. BSIT): BSIT
-```
+<img src="Screenshots/EnrollmentSystem-TestCase1.png" width="600" />
 
 ### Enrolled Student
 
-```
-+-----------------------------------------------------------------------------------------------+
-|                                                                                               |
-|                      You are now Enrolled in the University of Spartan!                       |
-|                                                                                               |
-+-----------------------------------------------------------------------------------------------+
-
-+-----------------------------------------------------------------------------------------------+
-|                                  Student Enrollment Summary                                   |
-+-----------------------------------------------------------------------------------------------+
-|    Student ID: 2025-5725                                                                      |
-|    Name: Krishylla Mae B. Ilagan                                                              |
-|    Age: 19                                                                                    |
-|    Address: Ibaan, Batangas                                                                   |
-|    Period: First Semester 2025-2026                                                           |
-|    Program: BSIT                                                                              |
-|    Year Level: 1st Year 1st Semester                                                          |
-|    Block: Blk. 103                                                                            |
-+-----------------------------------------------------------------------------------------------+
-+-----------------------------------------------------------------------------------------------+
-|                    For more inquiries kindly email: spartan.cics@gmail.com                    |
-+-----------------------------------------------------------------------------------------------+
-```
-
-
+<img src="Screenshots/EnrollmentSystem-TestCase2.png" width="600" />
 
 ## AUTHOR AND ACKNOWLEDGEMENT
 Our project **“SES: Student Enrollment System”** was done by our team **“Sesters”**. Our members’ name is listed here:
