@@ -807,18 +807,18 @@ class mscsStudent extends Student {
             EnrollmentSystem.printBoxLine("");
             EnrollmentSystem.printBoxLine(" Blk. 501");
             EnrollmentSystem.printBoxLine("   Saturday (F2F):");
-            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "MSCS111: Adv. Data Structures & Algo");
-            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "MSCS112: Adv. Computer Org & OS");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "MSCS111: Advanced Data Structures & Algorithms");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "MSCS112: Advanced Computer Organization & Advanced OS");
             EnrollmentSystem.printBoxLine("   Sunday (F2F):");
-            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "MSCS113: Theory of Prog. Languages");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "MSCS113: Theory of Programming Languages");
 
             EnrollmentSystem.printBoxLine("");
             EnrollmentSystem.printBoxLine(" Blk. 502");
             EnrollmentSystem.printBoxLine("   Saturday (F2F):");
-            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "MSCS111: Adv. Data Structures & Algo");
-            EnrollmentSystem.printBoxLine("     4:00 pm - 7:00 pm", "MSCS112: Adv. Computer Org & OS");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "MSCS111: Advanced Data Structures & Algorithms");
+            EnrollmentSystem.printBoxLine("     4:00 pm - 7:00 pm", "MSCS112: Advanced Computer Organization & Advanced OS");
             EnrollmentSystem.printBoxLine("   Sunday (F2F):");
-            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "MSCS113: Theory of Prog. Languages");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "MSCS113: Theory of Programming Languages");
         } else if (yearLevel.equals("2nd Year 1st Semester")) {
             EnrollmentSystem.printBoxLine("");
             EnrollmentSystem.printBoxLine(" Blk. 501");
@@ -848,3 +848,4 @@ class mscsStudent extends Student {
         return "Blk. " + chosenBlock;
     }
 }
+
