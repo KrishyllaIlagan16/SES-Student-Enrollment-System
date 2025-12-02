@@ -52,7 +52,7 @@ The project is built using two main parts, which are the main classes in the Jav
 Second, there is the **Student** class. This class is like a blueprint for creating an actual student. Every time a new student enrolls, the EnrollmentSystem creates a new Student object to hold their information, like their generated ID, age, and chosen block. The Student class keeps the student's data safe inside it by using methods to set and get the details, which is an example of encapsulation. The main class calls a method in the Student class to print out the final enrollment summary.
 
 ## HOW TO RUN THE PROGRAM
-To start, the user needs to use the command like command prompt or terminal and have java installed. First, they must compile the source code. The user should go to the folder where they saved the Java files (**EnrollmentSystem.java** and **Student.java**) and use the Java compiler command **“javac EnrollmentSystem.java”** Once the code is compiled successfully, the user can run the program. They should use the Java execution command to start the main class **“java EnrollmentSystem”** The program will then greet the user and start asking for their details right away.
+To start, the user needs to use the command like command prompt or terminal and have java installed. First, they must compile the source code. The user should go to the folder where they saved the Java file (**EnrollmentSystem.java**) and use the Java compiler command **“javac EnrollmentSystem.java”** Once the code is compiled successfully, the user can run the program. They should use the Java execution command to start the main class **“java EnrollmentSystem”** The program will then greet the user and start asking for their details right away.
 
 ## SAMPLE OUTPUT
 
