@@ -100,6 +100,7 @@ public class EnrollmentSystem {
             } else {
                 System.out.println("    Error! Please select A or B.");
             }
+            System.out.println();
         }
 
         String program = "";
@@ -560,53 +561,205 @@ class bscsStudent extends Student {
 
     @Override
     public void displayCourses() {
-        System.out.println("\n" + EnrollmentSystem.borderLine);
+        System.out.println("\n" + EnrollmentSystem.borderLine );
         EnrollmentSystem.printBoxLine(" Courses in the program of " + program + " for " + yearLevel+ ":");
         EnrollmentSystem.printBoxLine("");
         
         if (yearLevel.equals("1st Year 1st Semester")) {
+            EnrollmentSystem.printBoxLine(" - IT 111: Introduction to Computing");
             EnrollmentSystem.printBoxLine(" - CS 111: Computer Programming");
+            EnrollmentSystem.printBoxLine(" - Fili 101: Kontekstwalisadong Komunikasyon sa Filipino");
+            EnrollmentSystem.printBoxLine(" - GEd 101: Understanding the Self");
+            EnrollmentSystem.printBoxLine(" - GEd 102: Mathematics in the Modern World");
             EnrollmentSystem.printBoxLine(" - Math 111: Linear Algebra");
-            EnrollmentSystem.printBoxLine(" - PE 101: Physical Fitness");
+            EnrollmentSystem.printBoxLine(" - PE 101: Physical Fitness, Gymnastics and Aerobics");
+            EnrollmentSystem.printBoxLine(" - NSTP 111: National Service Training Program 1");
         } else if (yearLevel.equals("2nd Year 1st Semester")) {
             EnrollmentSystem.printBoxLine(" - CS 211: Object-Oriented Programming");
-            EnrollmentSystem.printBoxLine(" - CS 212: Computer Org & Assembly");
+            EnrollmentSystem.printBoxLine(" - CS 212: Computer Organization w/ Assembly Language");
+            EnrollmentSystem.printBoxLine(" - IT 211: Database Management Systems");
+            EnrollmentSystem.printBoxLine(" - IT 212: Computer Networking 1");
+            EnrollmentSystem.printBoxLine(" - Phy 101: Calculus-Based Physics");
+            EnrollmentSystem.printBoxLine(" - PE 103: Individual and Dual Sports");
         } else if (yearLevel.equals("3rd Year 1st Semester")) {
             EnrollmentSystem.printBoxLine(" - CS 311: Design and Analysis of Algorithms");
-            EnrollmentSystem.printBoxLine(" - CS 312: Automata Theory");
-        } else {
+            EnrollmentSystem.printBoxLine(" - CS 312: Automata Theory and Formal Languages");
+            EnrollmentSystem.printBoxLine(" - CS 313: Programming Languages");
+            EnrollmentSystem.printBoxLine(" - CS 314: Web Systems and Technologies");
+            EnrollmentSystem.printBoxLine(" - Math 404: Numerical Methods");
+            EnrollmentSystem.printBoxLine(" - Math 405: Data Analysis");
+        } else { 
             EnrollmentSystem.printBoxLine(" - CS 411: CS Thesis 1");
+            EnrollmentSystem.printBoxLine(" - CS 412: Software Engineering");
+            EnrollmentSystem.printBoxLine(" - CS 413: Advanced Software Engineering");
             EnrollmentSystem.printBoxLine(" - CS 414: Artificial Intelligence");
+            EnrollmentSystem.printBoxLine(" - CS 415: Principles of Operating Systems");
+            EnrollmentSystem.printBoxLine(" - CS Professional Elective 2");
         }
-        System.out.println(EnrollmentSystem.borderLine);
+        System.out.println(EnrollmentSystem.borderLine );
     }
 
     @Override
     public String chooseBlock(Scanner scanner) {
-        System.out.println("\n" + EnrollmentSystem.borderLine);
+        System.out.println("\n" + EnrollmentSystem.borderLine );
         EnrollmentSystem.printCenteredLine("Indicate your chosen BLOCK!");
         EnrollmentSystem.printCenteredLine("Here are the available blocks:");
-        System.out.println(EnrollmentSystem.borderLine);
+        System.out.println(EnrollmentSystem.borderLine );
 
-        String blockChoice = "";
-        EnrollmentSystem.printBoxLine("");
-        EnrollmentSystem.printBoxLine(" Blk. 201");
-        EnrollmentSystem.printBoxLine("   Monday (F2F):");
-        EnrollmentSystem.printBoxLine("     7:00 am - 10:00 am", "CS 111: Computer Programming");
-        EnrollmentSystem.printBoxLine("");
-        EnrollmentSystem.printBoxLine(" Blk. 202");
-        EnrollmentSystem.printBoxLine("   Monday (OLC):");
-        EnrollmentSystem.printBoxLine("     7:00 am - 10:00 am", "CS 111: Computer Programming");
+        String chosenBlock = "";
+        
+        if (yearLevel.equals("1st Year 1st Semester")) {
+            EnrollmentSystem.printBoxLine("");
+            EnrollmentSystem.printBoxLine(" Blk. 101");
+            EnrollmentSystem.printBoxLine("   Monday (F2F):");
+            EnrollmentSystem.printBoxLine("     7:00 am - 10:00 am", "CS 111: Computer Programming (Lab)");
+            EnrollmentSystem.printBoxLine("     11:00 am - 12:00 pm", "GEd 101: Understanding the Self");
+            EnrollmentSystem.printBoxLine("   Tuesday (OLC):");
+            EnrollmentSystem.printBoxLine("     9:00 am - 12:00 pm", "Math 111: Linear Algebra");
+            EnrollmentSystem.printBoxLine("   Wednesday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 10:00 am", "IT 111: Introduction to Computing");
+            EnrollmentSystem.printBoxLine("     10:00 am - 1:00 pm", "GEd 102: Mathematics in the Modern World");
+            EnrollmentSystem.printBoxLine("   Thursday (OLC):");
+            EnrollmentSystem.printBoxLine("     10:00 am - 1:00 pm", "Fili 101: Kontekstwalisadong Komunikasyon sa Filipino");
+            EnrollmentSystem.printBoxLine("   Friday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 10:00 am", "PE 101: Physical Fitness, Gymnastics and Aerobics");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "NSTP 111: National Service Training Program 1");
 
-        System.out.println(EnrollmentSystem.borderLine);
-        while (blockChoice.isEmpty()) {
-            System.out.print("\n  Enter your chosen block number (201 or 202): ");
-            String input = scanner.nextLine();
-            if (input.equals("201") || input.equals("202")) {
-                blockChoice = input;
-            } else { System.out.println("    Error! Please choose from the available options."); }
+            EnrollmentSystem.printBoxLine("");
+            EnrollmentSystem.printBoxLine(" Blk. 102");
+            EnrollmentSystem.printBoxLine("   Monday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "Math 111: Linear Algebra");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 3:00 pm", "IT 111: Introduction to Computing");
+            EnrollmentSystem.printBoxLine("   Tuesday (F2F):");
+            EnrollmentSystem.printBoxLine("     9:00 am - 12:00 pm", "CS 111: Computer Programming (Lab)");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 3:00 pm", "GEd 101: Understanding the Self");
+            EnrollmentSystem.printBoxLine("   Wednesday (OLC):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "GEd 102: Mathematics in the Modern World");
+            EnrollmentSystem.printBoxLine("   Thursday (F2F):");
+            EnrollmentSystem.printBoxLine("     10:00 am - 1:00 pm", "Fili 101: Kontekstwalisadong Komunikasyon sa Filipino");
+            EnrollmentSystem.printBoxLine("     2:00 pm - 4:00 pm", "PE 101: Physical Fitness, Gymnastics and Aerobics");
+            EnrollmentSystem.printBoxLine("   Friday (OLC):");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "NSTP 111: National Service Training Program 1");
+
+            System.out.println(EnrollmentSystem.borderLine );
+            while (chosenBlock.isEmpty()) {
+                System.out.print("\n  Enter your chosen block number (101 or 102): ");
+                String input = scanner.nextLine();
+                if (input.equals("101") || input.equals("102")) {
+                    chosenBlock = input;
+                } else { System.out.println("    Error! Please choose from the available options."); }
+            }
         }
-        return "Blk. " + blockChoice;
+        else if (yearLevel.equals("2nd Year 1st Semester")) {
+            EnrollmentSystem.printBoxLine("");
+            EnrollmentSystem.printBoxLine(" Blk. 201");
+            EnrollmentSystem.printBoxLine("   Monday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "CS 211: Object-Oriented Programming");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 3:00 pm", "IT 211: Database Management Systems");
+            EnrollmentSystem.printBoxLine("   Tuesday (OLC):");
+            EnrollmentSystem.printBoxLine("     9:00 am - 12:00 pm", "Phy 101: Calculus-Based Physics");
+            EnrollmentSystem.printBoxLine("   Wednesday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "CS 212: Computer Organization w/ Assembly");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 3:00 pm", "IT 212: Computer Networking 1");
+            EnrollmentSystem.printBoxLine("   Thursday (OLC):");
+            EnrollmentSystem.printBoxLine("     10:00 am - 12:00 pm", "PE 103: Individual and Dual Sports");
+            
+            EnrollmentSystem.printBoxLine("");
+            EnrollmentSystem.printBoxLine(" Blk. 202");
+            EnrollmentSystem.printBoxLine("   Monday (OLC):");
+            EnrollmentSystem.printBoxLine("     9:00 am - 12:00 pm", "Phy 101: Calculus-Based Physics");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 3:00 pm", "IT 212: Computer Networking 1");
+            EnrollmentSystem.printBoxLine("   Tuesday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "CS 211: Object-Oriented Programming");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 3:00 pm", "PE 103: Individual and Dual Sports");
+            EnrollmentSystem.printBoxLine("   Wednesday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "CS 212: Computer Organization w/ Assembly");
+            EnrollmentSystem.printBoxLine("   Thursday (OLC):");
+            EnrollmentSystem.printBoxLine("     10:00 am - 12:00 pm", "IT 211: Database Management Systems");
+
+            System.out.println(EnrollmentSystem.borderLine);
+            while (chosenBlock.isEmpty()) {
+                System.out.print("\n  Enter your chosen block number (201 or 202): ");
+                String input = scanner.nextLine();
+                if (input.equals("201") || input.equals("202")) {
+                    chosenBlock = input;
+                } else { System.out.println("    Error! Please choose from the available options."); }
+            }
+        }
+        else if (yearLevel.equals("3rd Year 1st Semester")) {
+            EnrollmentSystem.printBoxLine("");
+            EnrollmentSystem.printBoxLine(" Blk. 301");
+            EnrollmentSystem.printBoxLine("   Monday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "CS 311: Design and Analysis of Algorithms");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "CS 312: Automata Theory and Formal Languages");
+            EnrollmentSystem.printBoxLine("   Tuesday (OLC):");
+            EnrollmentSystem.printBoxLine("     9:00 am - 12:00 pm", "CS 313: Programming Languages");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "Math 404: Numerical Methods");
+            EnrollmentSystem.printBoxLine("   Wednesday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "CS 314: Web Systems and Technologies");
+            EnrollmentSystem.printBoxLine("   Thursday (OLC):");
+            EnrollmentSystem.printBoxLine("     10:00 am - 1:00 pm", "Math 405: Data Analysis");
+
+            EnrollmentSystem.printBoxLine("");
+            EnrollmentSystem.printBoxLine(" Blk. 302");
+            EnrollmentSystem.printBoxLine("   Monday (OLC):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "CS 311: Design and Analysis of Algorithms");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "Math 405: Data Analysis");
+            EnrollmentSystem.printBoxLine("   Tuesday (F2F):");
+            EnrollmentSystem.printBoxLine("     9:00 am - 12:00 pm", "CS 312: Automata Theory and Formal Languages");
+            EnrollmentSystem.printBoxLine("   Wednesday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "CS 313: Programming Languages");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "CS 314: Web Systems and Technologies");
+            EnrollmentSystem.printBoxLine("   Thursday (OLC):");
+            EnrollmentSystem.printBoxLine("     10:00 am - 1:00 pm", "Math 404: Numerical Methods");
+
+            System.out.println(EnrollmentSystem.borderLine );
+            while (chosenBlock.isEmpty()) {
+                System.out.print("\n  Enter your chosen block number (301 or 302): ");
+                String input = scanner.nextLine();
+                if (input.equals("301") || input.equals("302")) {
+                    chosenBlock = input;
+                } else { System.out.println("    Error! Please choose from the available options."); }
+            }
+        }
+        else if (yearLevel.equals("4th Year 1st Semester")) {
+            EnrollmentSystem.printBoxLine("");
+            EnrollmentSystem.printBoxLine(" Blk. 401");
+            EnrollmentSystem.printBoxLine("   Monday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "CS 411: CS Thesis 1");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "CS 412: Software Engineering");
+            EnrollmentSystem.printBoxLine("   Tuesday (OLC):");
+            EnrollmentSystem.printBoxLine("     9:00 am - 12:00 pm", "CS 413: Advanced Software Engineering");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "CS 414: Artificial Intelligence");
+            EnrollmentSystem.printBoxLine("   Wednesday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "CS 415: Principles of Operating Systems");
+            EnrollmentSystem.printBoxLine("   Thursday (OLC):");
+            EnrollmentSystem.printBoxLine("     10:00 am - 1:00 pm", "CS Professional Elective 2");
+
+            EnrollmentSystem.printBoxLine("");
+            EnrollmentSystem.printBoxLine(" Blk. 402");
+            EnrollmentSystem.printBoxLine("   Monday (OLC):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "CS 411: CS Thesis 1");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "CS 415: Principles of Operating Systems");
+            EnrollmentSystem.printBoxLine("   Tuesday (F2F):");
+            EnrollmentSystem.printBoxLine("     9:00 am - 12:00 pm", "CS 412: Software Engineering");
+            EnrollmentSystem.printBoxLine("   Wednesday (F2F):");
+            EnrollmentSystem.printBoxLine("     8:00 am - 11:00 am", "CS 413: Advanced Software Engineering");
+            EnrollmentSystem.printBoxLine("     1:00 pm - 4:00 pm", "CS 414: Artificial Intelligence");
+            EnrollmentSystem.printBoxLine("   Thursday (OLC):");
+            EnrollmentSystem.printBoxLine("     10:00 am - 1:00 pm", "CS Professional Elective 2");
+
+            System.out.println(EnrollmentSystem.borderLine );
+            while (chosenBlock.isEmpty()) {
+                System.out.print("\n  Enter your chosen block number (401 or 402): ");
+                String input = scanner.nextLine();
+                if (input.equals("401") || input.equals("402")) {
+                    chosenBlock = input;
+                } else { System.out.println("    Error! Please choose from the available options."); }
+            }
+        }
+        
+        return "Blk. " + chosenBlock;
     }
 }
 
